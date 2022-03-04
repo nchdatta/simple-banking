@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo banking</title>
+    
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="text-center my-3">Let's be a <span class="text-primary">billionire</span></h1>
+        <div class="container">
+    
+            <div class="row gx-3 gy-3 my-5">
+                <div class="col-12 col-lg-4">
+                    <div class="bg-warning p-5 rounded-2">
+                        <h2>Deposit</h2>
+                        <h2>$<span id="deposit_balance">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-primary p-5 rounded-2">
+                        <h2>Withdraw</h2>
+                        <h2>$<span id="withdraw_balance">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-info p-5 rounded-2">
+                        <h2>Balance</h2>
+                        <h2>$<span id="balance">00</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-3">
+                <div class="col-12 col-lg-6">
+                    <div class="bg-info p-5 rounded-2">
+                        <h2>Please deposit</h2>
+                        <input type="number" id="deposit_amount" class="w-75 input_area" placeholder="Amount you want to deposit"> <br>
+                        <a href="javascript:" id="btn_deposit" class="btn btn-warning mt-3 ">Deposit</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="bg-primary p-5 rounded-2">
+                        <h2>Please withdraw</h2>
+                        <input type="number" id="withdraw_amount"  class="w-75 input_area" placeholder="Amount you want to withdraw"> <br>
+                        <a href="javascript:" id="btn-withdraw" class="btn btn-warning mt-3 ">Withdraw</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="banking.js"></script>
+</body>
+</html>
